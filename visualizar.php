@@ -1,5 +1,5 @@
 <?php
-include 'config/conexao.php';
+include 'conexao.php';
 $id = intval($_GET['id'] ?? 0);
 
 $sql = "SELECT * FROM alunos WHERE id = $id";
@@ -11,6 +11,6 @@ if (!$aluno) {
     exit;
 }
 
-include 'includes/header.php';
+include 'header.php';
 ?>
 <!-- Estrutura de exibição dos detalhes do aluno -->
