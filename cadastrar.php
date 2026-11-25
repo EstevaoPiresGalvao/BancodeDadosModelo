@@ -1,5 +1,5 @@
 <?php
-include 'config/conexao.php';
+include 'conexao.php';
 $erro = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -82,4 +82,4 @@ include 'includes/header.php';
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
