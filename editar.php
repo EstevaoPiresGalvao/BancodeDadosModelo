@@ -1,5 +1,5 @@
 <?php
-include 'config/conexao.php';
+include 'conexao.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 $id = $id ?: 0;
 $erro = '';
@@ -109,4 +109,4 @@ htmlspecialchars($aluno['curso']) ?>">
 </form>
 </div>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
