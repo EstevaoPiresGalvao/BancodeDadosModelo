@@ -1,6 +1,6 @@
 <?php
-include 'config/conexao.php';
-include 'includes/header.php';
+include 'conexao.php';
+include 'header.php';
 
 $busca = $_GET['busca'] ?? '';
 
@@ -71,4 +71,4 @@ $resultado = mysqli_query($conexao, $sql);
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
