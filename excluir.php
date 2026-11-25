@@ -1,5 +1,5 @@
 <?php
-include 'config/conexao.php';
+include 'conexao.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 $id = $id ?: filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
 $id = $id ?: 0;
@@ -22,7 +22,7 @@ exit;
 $erro = 'Erro ao excluir o aluno: ' . mysqli_stmt_error($stmt_delete);
 }
 }
-include 'includes/header.php';
+include 'header.php';
 ?>
 <?php if (!$aluno): ?>
 <div class="alert alert-danger">Aluno não encontrado.</div>
@@ -46,4 +46,4 @@ include 'includes/header.php';
 </div>
 </div>
 <?php endif; ?>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
